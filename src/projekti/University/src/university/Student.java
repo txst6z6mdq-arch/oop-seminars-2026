@@ -42,7 +42,7 @@ public class Student {
         return name;
     }
     public void setName(String name) {
-        if (name == null || name.trim().isEmpty()) {
+        if (name == null || name.isBlank()) {
             throw new IllegalArgumentException("Emri nuk mund të jetë bosh.");
         }
         this.name = name;
